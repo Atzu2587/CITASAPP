@@ -1,5 +1,13 @@
-ion-card {
-    margin: 20px;
-    text-align: center;
-  }
-  
+.titulo-centrado {
+  text-align: center;
+}
+
+ion-header ion-toolbar ion-title {
+  text-align: center; /* Centrar el texto */
+}
+
+ion-back-button {
+  color: var(--ion-color-primary);
+  font-size: 1.2rem;
+}
+

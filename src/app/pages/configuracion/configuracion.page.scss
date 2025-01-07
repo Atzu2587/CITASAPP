@@ -1,4 +1,19 @@
-ion-item {
-    margin: 20px;
-  }
-  
+ion-back-button {
+  display: block; /* Asegúrate de que el botón esté visible */
+}
+
+.center-title {
+  text-align: center;
+  width: 100%;
+  font-size: 18px; /* Tamaño ajustable */
+  font-weight: bold;
+  color: white; /* Color del texto */
+}
+
+ion-toolbar {
+  --background: #3880ff; /* Fondo del toolbar */
+}
+
+ion-back-button {
+  --color: white; /* Color del botón de regreso */
+}

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
-import {IonContent, IonHeader, IonTitle, IonToolbar, IonCard, IonCardHeader, IonCardTitle, IonCardContent, IonButton} from '@ionic/angular/standalone'; // Importación de componentes adicionales
+import { FormsModule,  } from '@angular/forms';
+import {IonContent, IonHeader, IonTitle, IonToolbar, IonCard, IonCardHeader, IonCardTitle, IonCardContent, IonButton, IonBackButton, IonButtons } from '@ionic/angular/standalone'; // Importación de componentes adicionales
 import { CitasService } from 'src/app/services/citas.service';
 
 @Component({
@@ -9,7 +9,7 @@ import { CitasService } from 'src/app/services/citas.service';
   templateUrl: './inicio.page.html',
   styleUrls: ['./inicio.page.scss'],
   standalone: true,
-  imports: [IonContent, IonHeader, IonTitle, IonToolbar, IonCard, IonCardHeader, IonCardTitle, IonCardContent, CommonModule, FormsModule, IonButton ]
+  imports: [IonButtons, IonBackButton, IonContent, IonHeader, IonTitle, IonToolbar, IonCard, IonCardHeader, IonCardTitle, IonCardContent, CommonModule, FormsModule, IonButton ]
 })
 export class InicioPage implements OnInit {
   citaAleatoria: { frase: string; autor: string } | null = null;
