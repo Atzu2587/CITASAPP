@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Inicio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button expand="full" (click)="obtenerCitaAleatoria()">Nueva Cita</ion-button>
+
+  <ion-card *ngIf="citaAleatoria">
+    <ion-card-header>
+      <ion-card-title>"{{ citaAleatoria.frase }}"</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      - {{ citaAleatoria.autor }}
+    </ion-card-content>
+  </ion-card>
+</ion-content>

@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Gestión de Citas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let cita of citasService.citas; let i = index">
+      <ion-label>
+        "{{ cita.frase }}" - {{ cita.autor }}
+      </ion-label>
+      <ion-button fill="clear" color="danger" (click)="eliminarCita(i)">
+        Eliminar
+      </ion-button>
+    </ion-item>
+  </ion-list>
+
+  <ion-item>
+    <ion-input placeholder="Frase" [(ngModel)]="frase"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input placeholder="Autor" [(ngModel)]="autor"></ion-input>
+  </ion-item>
+  <ion-button expand="block" (click)="agregarCita()">Agregar Cita</ion-button>
+</ion-content>
